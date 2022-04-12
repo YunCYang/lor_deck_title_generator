@@ -1,0 +1,1 @@
+# lor_deck_title_generator
