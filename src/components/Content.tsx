@@ -1,5 +1,4 @@
 import React from 'react';
-// import './styles/general.css';
 import '../styles/Content.css';
 
 export class Content extends React.Component {
@@ -18,10 +17,8 @@ export class Content extends React.Component {
               <button className='sub'>X<sub>2</sub></button>
               <button className='marked'><mark>M</mark></button>
             </div>
-            <div className='sprite_button_container'>
+            <div className='scg_button_container'>
               <button className='sprite'>Sprite</button>
-            </div>
-            <div className='color_button_container'>
               <button className='color'>Color</button>
               <button className='gradient'>Gradient</button>
             </div>
