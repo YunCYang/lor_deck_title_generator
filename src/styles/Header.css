@@ -1,3 +1,17 @@
+/* border */
+.header .underline {
+  border-bottom: solid 1px;
+}
+
+/* color */
+.header h1 {
+  color: #D5934A;
+}
+
+.header .underline {
+  border-color: #D5934A;
+}
+
 /* flex */
 .header {
   display: flex;
@@ -7,13 +21,35 @@
 /* font */
 .header h1 {
   font-family: BeaufortforLOL-Regular, sans-serif;
-  font-size: 24px;
   margin: 0;
+}
+
+.header .header_main {
+  font-size: 20px;
+}
+
+.header .header_end {
+  font-size: 28px;
+}
+
+/* position */
+.header .header_end {
+  position: relative;
+  top: -3px;
 }
 
 /* space */
 .header {
   width: 100%;
+}
+
+.header .header_end,
+.header .underline {
+  margin: 30px 0 40px 0;
+}
+
+.header .underline {
+  height: 100%;
 }
 
 /* .header .img_container {
