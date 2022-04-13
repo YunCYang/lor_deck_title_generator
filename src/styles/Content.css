@@ -1,0 +1,12 @@
+/* border */
+.content .buttons_container {
+  border: solid 1px #D5934A;
+}
+
+/* space */
+.content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
