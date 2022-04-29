@@ -1,0 +1,87 @@
+/* border */
+.spriteModal .sprite_wrapper .sprite_containers {
+  border: solid 1px;
+}
+
+/* color */
+.spriteModal {
+  background-color: #F3F0E9;
+}
+
+.spriteModal .sprite_wrapper .sprite_containers {
+  border-color: #D5934A;
+}
+
+/* grid */
+.spriteModal .sprite_wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+@media only screen and (min-width: 250px) {
+  .spriteModal .sprite_wrapper {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+@media only screen and (min-width: 320px) {
+  .spriteModal .sprite_wrapper {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+
+@media only screen and (min-width: 500px) {
+  .spriteModal .sprite_wrapper {
+    grid-template-columns: repeat(7, 1fr);
+  }
+}
+
+/* @media only screen and (min-width: 800px) {
+  .spriteModal .sprite_wrapper {
+    grid-template-columns: repeat(8, 1fr);
+  }
+} */
+
+/* space */
+.spriteModal .sprite_wrapper .sprite_containers {
+  margin: -0.5px;
+}
+
+/* .spriteModal, */
+.spriteModal .sprite_wrapper {
+  height: 100%;
+  width: 100%;
+}
+
+@media only screen and (min-width: 200px) {
+  .content .content_modal .spriteModal {
+    height: 469.5px;
+    width: 139px;
+  }
+}
+
+@media only screen and (min-width: 238px) {
+  .content .content_modal .spriteModal {
+    height: 434px;
+    width: 165.5px;
+  }
+}
+
+@media only screen and (min-width: 321px) {
+  .content .content_modal .spriteModal {
+    height: 404px;
+    width: 224px;
+  }
+}
+
+@media only screen and (min-width: 500px) {
+  .content .content_modal .spriteModal {
+    height: 404px;
+    width: 349px;
+  }
+}
+
+/* others */
+.spriteModal .sprite_wrapper {
+  cursor: pointer;
+}

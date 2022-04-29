@@ -1,0 +1,40 @@
+/* color */
+.help_modal {
+  background-color: #C6B7A0;
+  color: #282428
+}
+
+/* font */
+.help_modal .help_wrapper {
+  font-family: UniversLTStd, sans-serif;
+}
+
+/* space */
+.help_modal,
+.help_modal .help_wrapper {
+  height: 100%;
+  width: 100%;
+}
+
+@media only screen and (min-width: 200px) {
+  .help_modal .help_wrapper {
+    padding: 4px;
+  }
+}
+
+@media only screen and (min-width: 322px) {
+  .help_modal .help_wrapper {
+    padding: 10px;
+  }
+}
+
+@media only screen and (min-width: 462px) {
+  .help_modal .help_wrapper {
+    padding: 10px 20px;
+  }
+}
+
+/* others */
+.help_modal .help_wrapper {
+  overflow-y: scroll;
+}

@@ -1,0 +1,735 @@
+/* space */
+.spriteModal .sprite {
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+}
+
+/* sprites */
+.sprite_burst {
+  background-image: url('../images/sprites/comp.webp');
+  background-size: 700%;
+  background-position: 2px 0;
+}
+.sprite_barrier {
+  background-image: url('../images/sprites/barrier.webp');
+  background-position: center;
+}
+.sprite_spell {
+  background-image: url('../images/sprites/comp.webp');
+  background-size: 700%;
+  background-position: -57px 0;
+}
+.sprite_scout {
+  background-image: url('../images/sprites/scout.webp');
+  background-position: center;
+}
+.sprite_augmented {
+  background-image: url('../images/sprites/augmented.webp');
+  background-position: center;
+}
+.sprite_attach {
+  background-image: url('../images/sprites/attach.webp');
+  background-position: center;
+}
+.sprite_levelUp_2 {
+  background-image: url('../images/sprites/comp.webp');
+  background-size: 600%;
+  background-position: 5px -22px;
+}
+.sprite_aura {
+  background-image: url('../images/sprites/aura.webp');
+  background-position: center;
+}
+.sprite_effect {
+  background-image: url('../images/sprites/comp.webp');
+  background-size: 700%;
+  background-position: -57px -30px;
+}
+.sprite_regeneration {
+  background-image: url('../images/sprites/regeneration.png');
+  background-position: center;
+}
+.sprite_spellShield {
+  background-image: url('../images/sprites/spellShield.webp');
+  background-position: center;
+}
+.sprite_fated {
+  background-image: url('../images/sprites/fated.webp');
+  background-position: center;
+}
+.sprite_formidable {
+  background-image: url('../images/sprites/formidable.webp');
+  background-position: center;
+}
+.sprite_levelUp_1 {
+  background-image: url('../images/sprites/comp.webp');
+  background-size: 600%;
+  background-position: 6px -48px;
+}
+.sprite_attune {
+  background-image: url('../images/sprites/attune.webp');
+  background-position: center;
+}
+.sprite_frostbite {
+  background-image: url('../images/sprites/frostbite.png');
+  background-position: center;
+}
+.sprite_cantBlock {
+  background-image: url('../images/sprites/cantBlock.png');
+  background-position: center;
+}
+.sprite_fury {
+  background-image: url('../images/sprites/fury.webp');
+  background-position: center;
+}
+.sprite_lurk {
+  background-image: url('../images/sprites/lurk.png');
+  background-position: center;
+}
+.sprite_impact_1 {
+  background-image: url('../images/sprites/impact_1.webp');
+  background-position: center;
+}
+.sprite_impact_0 {
+  background-image: url('../images/sprites/comp.webp');
+  background-size: 700%;
+  background-position: -204px -60px;
+}
+.sprite_levelUp_0 {
+  background-image: url('../images/sprites/comp.webp');
+  background-size: 600%;
+  background-position: 6px -73px;
+}
+.sprite_championCard {
+  background-image: url('../images/sprites/championWildcard.webp');
+  background-size: 50%;
+  background-position: center;
+}
+.sprite_fleeting {
+  background-image: url('../images/sprites/fleeting.png');
+  background-position: center;
+}
+.sprite_quickAttack {
+  background-image: url('../images/sprites/quickAttack.png');
+  background-position: center;
+}
+.sprite_silenced {
+  background-image: url('../images/sprites/silenced.webp');
+  background-position: center;
+}
+.sprite_stunned {
+  background-image: url('../images/sprites/stunned.webp');
+  background-position: center;
+}
+.sprite_tough {
+  background-image: url('../images/sprites/tough.png');
+  background-position: center;
+}
+.sprite_vulnerable {
+  background-image: url('../images/sprites/vulnerable.webp');
+  background-position: center;
+}
+.sprite_bandleCity {
+  background-image: url('../images/sprites/icon-bandlecity.png');
+  background-size: 70%;
+  background-position: center;
+}
+.sprite_epicCard {
+  background-image: url('../images/sprites/epicWildcard.webp');
+  background-size: 50%;
+  background-position: center;
+}
+.sprite_fearsome {
+  background-image: url('../images/sprites/fearsome.png');
+  background-position: center;
+}
+.sprite_immobile {
+  background-image: url('../images/sprites/cantAttack.webp');
+  background-position: center;
+}
+.sprite_lastBreath {
+  background-image: url('../images/sprites/lastBreath.png');
+  background-position: center;
+}
+.sprite_lifeSteal {
+  background-image: url('../images/sprites/lifesteal.png');
+  background-position: center;
+}
+.sprite_overwhelm {
+  background-image: url('../images/sprites/overwhelm.png');
+  background-position: center;
+}
+.sprite_skill_1 {
+  background-image: url('../images/sprites/comp.webp');
+  background-size: 700%;
+  background-position: -204px -118px;
+}
+.sprite_skill_0 {
+  background-image: url('../images/sprites/comp.webp');
+  background-size: 650%;
+  background-position: -189px -108px;
+}
+.sprite_shurima {
+  background-image: url('../images/sprites/icon-shurima.png');
+  background-size: 70%;
+  background-position: center;
+}
+.sprite_rareCard {
+  background-image: url('../images/sprites/rareWildcard.webp');
+  background-size: 50%;
+  background-position: center;
+}
+.sprite_capture {
+  background-image: url('../images/sprites/capture.webp');
+  background-size: 60%;
+  background-position: center;
+}
+.sprite_challenger {
+  background-image: url('../images/sprites/challenger.webp');
+  background-position: center;
+}
+.sprite_deep {
+  background-image: url('../images/sprites/deep.webp');
+  background-size: 60%;
+  background-position: center;
+}
+.sprite_doubleAttack {
+  background-image: url('../images/sprites/doubleAttack.png');
+  background-position: center;
+}
+.sprite_elusive {
+  background-image: url('../images/sprites/elusive.png');
+  background-position: center;
+}
+.sprite_ephemeral {
+  background-image: url('../images/sprites/ephemeral.png');
+  background-position: center;
+}
+.sprite_targon {
+  background-image: url('../images/sprites/icon-targon.png');
+  background-size: 70%;
+  background-position: center;
+}
+.sprite_fast {
+  background-image: url('../images/sprites/comp.webp');
+  background-size: 700%;
+  background-position: -28px -178px;
+}
+.sprite_slow {
+  background-image: url('../images/sprites/comp.webp');
+  background-size: 700%;
+  background-position: -57px -178px;
+}
+.sprite_focus {
+  background-image: url('../images/sprites/comp.webp');
+  background-size: 700%;
+  background-position: -87px -178px;
+}
+.sprite_landmark {
+  background-image: url('../images/sprites/comp.webp');
+  background-size: 700%;
+  background-position: -116px -178px;
+}
+.sprite_coin {
+  background-image: url('../images/sprites/coin.webp');
+  background-size: 60%;
+  background-position: center;
+}
+.sprite_shard {
+  background-image: url('../images/sprites/shard.webp');
+  background-size: 50%;
+  background-position: center;
+}
+.sprite_commonCard {
+  background-image: url('../images/sprites/commonWildcard.webp');
+  background-size: 50%;
+  background-position: center;
+}
+.sprite_allRegion {
+  background-image: url('../images/sprites/icon-all.png');
+  background-size: 70%;
+  background-position: center;
+}
+.sprite_bilgeWater {
+  background-image: url('../images/sprites/icon-bilgewater.png');
+  background-size: 70%;
+  background-position: center;
+}
+.sprite_demacia {
+  background-image: url('../images/sprites/icon-demacia.png');
+  background-size: 70%;
+  background-position: center;
+}
+.sprite_freljord {
+  background-image: url('../images/sprites/icon-freljord.png');
+  background-size: 70%;
+  background-position: center;
+}
+.sprite_ionia {
+  background-image: url('../images/sprites/icon-ionia.png');
+  background-size: 70%;
+  background-position: center;
+}
+.sprite_noxus {
+  background-image: url('../images/sprites/icon-noxus.png');
+  background-size: 70%;
+  background-position: center;
+}
+.sprite_pnz {
+  background-image: url('../images/sprites/icon-piltoverzaun.png');
+  background-size: 70%;
+  background-position: center;
+}
+.sprite_shadowIsles {
+  background-image: url('../images/sprites/icon-shadowisles.png');
+  background-size: 70%;
+  background-position: center;
+}
+
+@media only screen and (min-width: 238px) {
+  .sprite_burst {
+    background-size: 570%;
+    background-position: 7px 0;
+  }
+
+  .sprite_spell {
+    background-size: 636%;
+    background-position: -59px -3px;
+  }
+
+  .sprite_levelUp_2 {
+    background-size: 568%;
+    background-position: 8px -29px;
+  }
+
+  .sprite_effect {
+    background-size: 625%;
+    background-position: -59px -35px;
+  }
+
+  .sprite_levelUp_1 {
+    background-size: 568%;
+    background-position: 9px -57px;
+  }
+
+  .sprite_impact_0 {
+    background-size: 625%;
+    background-position: -216px -70px;
+  }
+
+  .sprite_levelUp_0 {
+    background-size: 568%;
+    background-position: 6px -86px;
+  }
+
+  .sprite_skill_1 {
+    background-size: 640%;
+    background-position: -223px -132px;
+  }
+
+  .sprite_skill_0 {
+    background-size: 610%;
+    background-position: -213px -125px;
+  }
+
+  .sprite_capture {
+    background-size: 50%;
+  }
+
+  .sprite_deep {
+    background-size: 50%;
+  }
+
+  .sprite_fast {
+    background-size: 670%;
+    background-position: -32px -207px;
+  }
+
+  .sprite_slow {
+    background-size: 670%;
+    background-position: -65px -207px;
+  }
+
+  .sprite_focus {
+    background-size: 670%;
+    background-position: -98px -207px;
+  }
+
+  .sprite_landmark {
+    background-size: 670%;
+    background-position: -133px -207px;
+  }
+
+  .sprite_coin {
+    background-size: 50%;
+  }
+
+  .sprite_shard {
+    background-size: 40%;
+  }
+
+  .sprite_championCard,
+  .sprite_epicCard,
+  .sprite_rareCard,
+  .sprite_commonCard {
+    background-size: 40%;
+  }
+
+  .sprite_bandleCity,
+  .sprite_shurima,
+  .sprite_targon,
+  .sprite_allRegion,
+  .sprite_bilgeWater,
+  .sprite_demacia,
+  .sprite_freljord,
+  .sprite_ionia,
+  .sprite_noxus,
+  .sprite_pnz,
+  .sprite_shadowIsles {
+    background-size: 65%;
+  }
+}
+
+@media only screen and (min-width: 250px) {
+  .sprite_burst {
+    background-size: 750%;
+    background-position: 2px 2px;
+  }
+
+  .sprite_spell {
+    background-size: 800%;
+    background-position: -64px 0;
+  }
+
+  .sprite_levelUp_2 {
+    background-size: 700%;
+    background-position: 3px -24px;
+  }
+
+  .sprite_effect {
+    background-size: 800%;
+    background-position: -65px -32px;
+  }
+
+  .sprite_levelUp_1 {
+    background-size: 700%;
+    background-position: 3px -53px;
+  }
+
+  .sprite_impact_0 {
+    background-size: 750%;
+    background-position: -210px -60px;
+  }
+
+  .sprite_levelUp_0 {
+    background-size: 700%;
+    background-position: 3px -81px;
+  }
+
+  .sprite_skill_1 {
+    background-size: 800%;
+    background-position: -225px -128px;
+  }
+
+  .sprite_skill_0 {
+    background-size: 700%;
+    background-position: -195px -110px;
+  }
+
+  .sprite_capture,
+  .sprite_deep {
+    background-size: 65%;
+  }
+
+  .sprite_fast {
+    background-size: 800%;
+    background-position: -32px -193px;
+  }
+
+  .sprite_slow {
+    background-size: 800%;
+    background-position: -64px -193px;
+  }
+
+  .sprite_focus {
+    background-size: 800%;
+    background-position: -96px -193px;
+  }
+
+  .sprite_landmark {
+    background-size: 800%;
+    background-position: -128px -193px;
+  }
+
+  .sprite_coin {
+    background-size: 75%;
+  }
+
+  .sprite_shard {
+    background-size: 60%;
+  }
+
+  .sprite_championCard,
+  .sprite_epicCard,
+  .sprite_rareCard,
+  .sprite_commonCard {
+    background-size: 60%;
+  }
+
+  .sprite_bandleCity,
+  .sprite_shurima,
+  .sprite_targon,
+  .sprite_allRegion,
+  .sprite_bilgeWater,
+  .sprite_demacia,
+  .sprite_freljord,
+  .sprite_ionia,
+  .sprite_noxus,
+  .sprite_pnz,
+  .sprite_shadowIsles {
+    background-size: 85%;
+  }
+}
+
+@media only screen and (min-width: 321px) {
+  .sprite_spell {
+    background-position: -73px 0;
+  }
+
+  .sprite_levelUp_2 {
+    background-position: 3px -28px;
+  }
+
+  .sprite_effect {
+    background-position: -72px -36px;
+  }
+
+  .sprite_levelUp_1 {
+    background-position: 3px -60px;
+  }
+
+  .sprite_impact_0 {
+    background-size: 700%;
+    background-position: -220px -62px;
+  }
+
+  .sprite_levelUp_0 {
+    background-position: 3px -92px;
+  }
+
+  .sprite_skill_1 {
+    background-position: -253px -145px;
+  }
+
+  .sprite_skill_0 {
+    background-position: -220px -125px;
+  }
+
+  .sprite_fast {
+    background-position: -36px -220px;
+  }
+
+  .sprite_slow {
+    background-position: -72px -220px;
+  }
+
+  .sprite_focus {
+    background-position: -110px -220px;
+  }
+
+  .sprite_landmark {
+    background-position: -145px -220px;
+  }
+}
+
+@media only screen and (min-width: 500px) {
+  .sprite_burst {
+    background-size: 650%;
+    background-position: 4px 4px;
+  }
+
+  .sprite_spell {
+    background-size: 700%;
+    background-position: -82px 0;
+  }
+
+  .sprite_levelUp_2 {
+    background-size: 620%;
+    background-position: 8px -33px;
+  }
+
+  .sprite_effect {
+    background-size: 630%;
+    background-position: -72px -36px;
+  }
+
+  .sprite_levelUp_1 {
+    background-size: 620%;
+    background-position: 8px -71px;
+  }
+
+  .sprite_impact_0 {
+    background-size: 540%;
+    background-position: -226px -58px;
+  }
+
+  .sprite_levelUp_0 {
+    background-size: 620%;
+    background-position: 8px -110px;
+  }
+
+  .sprite_skill_1 {
+    background-size: 700%;
+    background-position: -300px -170px;
+  }
+
+  .sprite_skill_0 {
+    background-size: 600%;
+    background-position: -254px -142px;
+  }
+
+  .sprite_fast {
+    background-size: 700%;
+    background-position: -42px -255px;
+  }
+
+  .sprite_slow {
+    background-size: 700%;
+    background-position: -82px -255px;
+  }
+
+  .sprite_focus {
+    background-size: 700%;
+    background-position: -125px -255px;
+  }
+
+  .sprite_landmark {
+    background-size: 700%;
+    background-position: -168px -255px;
+  }
+
+  .sprite_capture,
+  .sprite_deep {
+    background-size: 45%;
+  }
+
+  .sprite_championCard,
+  .sprite_epicCard,
+  .sprite_rareCard,
+  .sprite_commonCard {
+    background-size: 50%;
+  }
+
+  .sprite_bandleCity,
+  .sprite_shurima,
+  .sprite_targon,
+  .sprite_allRegion,
+  .sprite_bilgeWater,
+  .sprite_demacia,
+  .sprite_freljord,
+  .sprite_ionia,
+  .sprite_noxus,
+  .sprite_pnz,
+  .sprite_shadowIsles {
+    background-size: 60%;
+  }
+}
+
+/* @media only screen and (min-width: 800px) {
+  .sprite_burst {
+    background-size: 800%;
+    background-position: 0 6px;
+  }
+
+  .sprite_spell {
+    background-size: 750%;
+    background-position: -79px 5px;
+  }
+
+  .sprite_levelUp_2 {
+    background-size: 800%;
+    background-position: 1px -37px;
+  }
+
+  .sprite_effect {
+    background-size: 750%;
+    background-position: -80px -35px;
+  }
+
+  .sprite_levelUp_1 {
+    background-size: 800%;
+    background-position: 1px -80px;
+  }
+
+  .sprite_impact_0 {
+    background-size: 600%;
+    background-position: -226px -58px;
+  }
+
+  .sprite_levelUp_0 {
+    background-size: 800%;
+    background-position: 1px -124px;
+  }
+
+  .sprite_skill_1 {
+    background-size: 700%;
+    background-position: -300px -170px;
+  }
+
+  .sprite_skill_0 {
+    background-size: 600%;
+    background-position: -254px -142px;
+  }
+
+  .sprite_fast {
+    background-size: 700%;
+    background-position: -42px -255px;
+  }
+
+  .sprite_slow {
+    background-size: 700%;
+    background-position: -82px -255px;
+  }
+
+  .sprite_focus {
+    background-size: 700%;
+    background-position: -125px -255px;
+  }
+
+  .sprite_landmark {
+    background-size: 700%;
+    background-position: -168px -255px;
+  }
+
+  .sprite_capture,
+  .sprite_deep {
+    background-size: 45%;
+  }
+
+  .sprite_championCard,
+  .sprite_epicCard,
+  .sprite_rareCard,
+  .sprite_commonCard {
+    background-size: 50%;
+  }
+
+  .sprite_bandleCity,
+  .sprite_shurima,
+  .sprite_targon,
+  .sprite_allRegion,
+  .sprite_bilgeWater,
+  .sprite_demacia,
+  .sprite_freljord,
+  .sprite_ionia,
+  .sprite_noxus,
+  .sprite_pnz,
+  .sprite_shadowIsles {
+    background-size: 60%;
+  } */
+
+  /* .sprite_barrier,
+  .sprite_scout {
+    background-size: 50%;
+  } */
+/* } */
