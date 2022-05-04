@@ -48,7 +48,7 @@ export const renderDeckName = (textInput: string, deckNameRef: React.RefObject<(
           id: index,
           text: textInput[index],
           isShown: true,
-          className: '',
+          className: 'display_text',
           style: {
             fontWeight: '400',
             fontStyle: 'normal',
@@ -67,7 +67,7 @@ export const renderDeckName = (textInput: string, deckNameRef: React.RefObject<(
           id: index,
           text: textInput[index],
           isShown: false,
-          className: '',
+          className: dataRecord[index]['className'],
           style: {
             fontWeight: '400',
             fontStyle: 'normal',
@@ -557,7 +557,7 @@ export const renderDeckName = (textInput: string, deckNameRef: React.RefObject<(
                 const spriteClass = searchSpriteList(spriteIdText);
                 if (spriteClass) {
                   inTag = true;
-                  dataRecord[i]['className'] = `sprite_display_${spriteClass} sprite_display sprite_${spriteClass}`;
+                  dataRecord[i]['className'] = `${dataRecord[i]['className']} sprite_display_${spriteClass} sprite_display sprite_${spriteClass}`;
                   processRecord(i, true, 'color', 'transparent');
                 }
               }

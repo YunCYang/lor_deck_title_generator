@@ -532,6 +532,10 @@
   width: 30px;
 }
 
+.content .text_container .display_text {
+  min-width: 0.3rem;
+}
+
 .content .copyBtn_container button {
   margin-right: 5px;
 }
