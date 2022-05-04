@@ -49,8 +49,9 @@ export const HelpModal: React.FunctionComponent = () => {
         <p>You can use either the number or the name to select the sprite.</p>
         <p>{`<sprite=1>`} - the available number goes from 0 to 61.</p>
         <p>{`<sprite name=Ionia>`} - named sprite tag.</p>
-        <p>You can apply the following text formats to sprites: underline, line through,
-          and marking.</p>
+        <p>You can apply the following text decorations to sprites: underline, line through,
+          and marking. Note that the editor currently do not support the preview of
+          text decoration on sprites.</p>
         <h3>Limit</h3>
         <p>There is a 50 characters limit on deck names.</p>
       </div>

@@ -8,7 +8,6 @@ import { renderDeckName } from '../utils/renderDeckName';
 export const Content: React.FunctionComponent = () => {
   const [textInput, setTextInput] = useState('');
   const [selectionRange, setSelectionRange] = useState([0, 0]);
-  const [tagType, setTagType] = useState('');
   const [selectColor, setSelectColor] = useState('#F5D765');
   const [selectGradient, setSelectGradient] = useState(['#F5D765', '#F5D765']);
   const [isModalShown, setIsModalShown] = useState<boolean | null>(null);
@@ -16,7 +15,7 @@ export const Content: React.FunctionComponent = () => {
   const [modalType, setModalType] = useState(0);
   const [isCopyDeck, setIsCopyDeck] = useState<boolean | null>(null);
   const [isOverCharLimit, setisOverCharLimit] = useState<boolean | null>(null);
-  const [selectSprite, setSelectSprite] = useState('');
+  const [selectSprite, setSelectSprite] = useState(null);
   const [isColorShown, setIsColorShown] = useState<boolean | null>(null);
 
   const textRef = useRef<HTMLTextAreaElement>();
@@ -78,15 +77,15 @@ export const Content: React.FunctionComponent = () => {
     }
   }, [isCopyDeck]);
 
-  useEffect(() => {
-    const element = document.getElementById('deckNameInput') as HTMLInputElement;
-    element.focus();
-    element.selectionStart = selectionRange[0] + tagType.length + 2;
-    element.selectionEnd = selectionRange[0] + tagType.length + 2;
-  }, [tagType]);
+  // useEffect(() => {
+  //   const element = document.getElementById('deckNameInput') as HTMLInputElement;
+  //   element.focus();
+  //   element.selectionStart = selectionRange[0] + tagType.length + 2;
+  //   element.selectionEnd = selectionRange[0] + tagType.length + 2;
+  // }, [tagType]);
 
   useEffect(() => {
-    if (selectSprite) {
+    if (typeof selectSprite === 'number') {
       addSpriteTag();
     }
   }, [selectSprite]);
@@ -119,28 +118,40 @@ export const Content: React.FunctionComponent = () => {
   };
 
   const addHtmlTag = (tagType: string): void => {
-    const moddedText = textInput.substring(0, selectionRange[0])
-      + `<${tagType}>` + textInput.substring(selectionRange[0], selectionRange[1])
-      + `</${tagType}>` + textInput.substring(selectionRange[1], textInput.length);
+    let moddedText = '';
+    if (selectionRange[0] === selectionRange[1] ||
+        selectionRange[1] === selectionRange[2]) {
+      moddedText = textInput.substring(0, selectionRange[0])
+        + `<${tagType}>` + textInput.substring(selectionRange[0], textInput.length);
+    } else {
+      moddedText = textInput.substring(0, selectionRange[0])
+        + `<${tagType}>` + textInput.substring(selectionRange[0], selectionRange[1])
+        + `</${tagType}>` + textInput.substring(selectionRange[1], textInput.length);
+    }
 
       if (moddedText.length > 50) {
         setisOverCharLimit(true);
       } else {
         setTextInput(moddedText);
-        setTagType(tagType);
       }
   };
 
   const addColorTag = (colorType: string): void => {
-    const moddedText = textInput.substring(0, selectionRange[0])
-      + `<${colorType}>` + textInput.substring(selectionRange[0], selectionRange[1])
-      + `</color>` + textInput.substring(selectionRange[1], textInput.length);
+    let moddedText = '';
+    if (selectionRange[0] === selectionRange[1]||
+        selectionRange[1] === selectionRange[2]) {
+      moddedText = textInput.substring(0, selectionRange[0])
+        + `<${colorType}>` + textInput.substring(selectionRange[0], textInput.length);
+    } else {
+      moddedText = textInput.substring(0, selectionRange[0])
+        + `<${colorType}>` + textInput.substring(selectionRange[0], selectionRange[1])
+        + `</color>` + textInput.substring(selectionRange[1], textInput.length);
+    }
 
     if (moddedText.length > 50) {
       setisOverCharLimit(true);
     } else {
       setTextInput(moddedText);
-      // setSelectColor(colorType);
     }
   };
 
@@ -148,6 +159,7 @@ export const Content: React.FunctionComponent = () => {
     const gradientValueArr = [];
     let gradientText = '';
     for (let i = 0; i < selectionRange[1] - selectionRange[0]; i++) {
+      console.log(selectionRange[1] - selectionRange[0], i, selectGradient[0], selectGradient[1]);
       gradientValueArr.push(
         renderGradient(
           selectionRange[1] - selectionRange[0],
@@ -160,7 +172,9 @@ export const Content: React.FunctionComponent = () => {
     for (let i = 0; i < selectionRange[1] - selectionRange[0]; i++) {
       gradientText += `<#${gradientValueArr[i]}>`;
       gradientText += textInput.substring(selectionRange[0] + i, selectionRange[0] + i + 1);
-      if (i === selectionRange[1] - selectionRange[0] - 1) {
+      if (i === selectionRange[1] - selectionRange[0] - 1 &&
+          !(selectionRange[1] === selectionRange[0] ||
+            selectionRange[1] === selectionRange[2])) {
         gradientText += `</color>`;
       }
     }
@@ -220,11 +234,11 @@ export const Content: React.FunctionComponent = () => {
     const startNumArr = startArr.map((numChar: string): number => convertHexStringToNumber(numChar));
     const endNumArr = endArr.map((numChar: string): number => convertHexStringToNumber(numChar));
     if (length) {
-      for (let i = 0; i < length - 1; i++) {
+      for (let i = 0; i < 6; i++) {
         const calculatedValue =
           Math.round((startNumArr[i + 1] * (length - pos - 1) / (length - 1)) +
           (endNumArr[i + 1] * pos / (length - 1)));
-        let temp = '';
+          let temp = '';
         if (calculatedValue <= 9) {
           temp = calculatedValue.toString();
         } else {
@@ -286,7 +300,7 @@ export const Content: React.FunctionComponent = () => {
               (e): void => setTextInput(e.target.value)
             }
             value={textInput} onSelect={
-              (e): void => setSelectionRange([e.currentTarget.selectionStart, e.currentTarget.selectionEnd])
+              (e): void => setSelectionRange([e.currentTarget.selectionStart, e.currentTarget.selectionEnd, e.currentTarget.value.length])
             } ref={textRef as React.RefObject<HTMLTextAreaElement>}
           ></textarea>
           <div className={`warning_container ${
@@ -391,22 +405,6 @@ export const Content: React.FunctionComponent = () => {
           </div>
         </div>
         <div className='text_container' id="text_container">
-          {/* <img
-            src={require('../images/corner.png')} alt="border corner"
-            className='corner_c c1'
-          />
-          <img
-            src={require('../images/corner.png')} alt="border corner"
-            className='corner_c c2'
-          />
-          <img
-            src={require('../images/corner.png')} alt="border corner"
-            className='corner_c c3'
-          />
-          <img
-            src={require('../images/corner.png')} alt="border corner"
-            className='corner_c c4'
-          /> */}
           { renderDeckName(textInput, deckNameRef) }
         </div>
         <div className='actions_container'>

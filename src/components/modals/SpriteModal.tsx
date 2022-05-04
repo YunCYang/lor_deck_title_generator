@@ -33,7 +33,7 @@ export const SpriteModal: React.FunctionComponent<SpriteModalProps> = ({ setSele
                 {/* <SpriteImage /> */}
                 {/* <img src={require(`${sprite.src}`)} alt={sprite.name} /> */}
                 {/* {sprite.id} */}
-                <div className={`sprite sprite_${sprite.name}`}></div>
+                <div className={`sprite sprite_${sprite.name} sprite_modal_${sprite.name}`}></div>
               </div>
             );
           })

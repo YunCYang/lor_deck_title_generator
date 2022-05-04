@@ -142,7 +142,7 @@
 }
 
 .content .text_container {
-  background-color: #C6B7A0;
+  background-color: #D7D3CA;
 }
 
 .content .buttons_container button:active,
@@ -281,8 +281,6 @@
 
 .content textarea,
 .content .text_container {
-  /* word-wrap: break-word; */
-  /* overflow-wrap: break-word; */
   word-break: break-all;
 }
 
@@ -355,36 +353,12 @@
 }
 
 .content .warning_container,
-/* .content .buttons_container #colorInput, */
 .content .buttons_container .colorModal,
 .content .buttons_container .gradientModal,
 .content .content_modal,
 .content .text_container .corner_c {
   position: absolute;
 }
-
-/* .content .text_container .c1 {
-  top: -1px;
-  left: -1px;
-  transform: rotateY(180deg);
-}
-
-.content .text_container .c2 {
-  top: -1px;
-  right: -1px;
-}
-
-.content .text_container .c3 {
-  bottom: -1px;
-  left: -1px;
-  transform: rotate(180deg);
-}
-
-.content .text_container .c4 {
-  bottom: -1px;
-  right: -1px;
-  transform: rotateX(180deg);
-} */
 
 .content .warning_container {
   top: 2px;
@@ -411,8 +385,8 @@
 
 .content .buttons_container .colorModal,
 .content .buttons_container .gradientModal {
-  top: -1px;
-  left: -10%;
+  top: -50px;
+  left: -60%;
 }
 
 @media only screen and (min-width: 321px) {
@@ -442,7 +416,6 @@
 @media only screen and (min-width: 700px) {
   .content .content_modal {
     top: 20px;
-    /* right: 12%; */
   }
 }
 
@@ -485,11 +458,6 @@
 .content .content_modal {
   width: 78%;
 }
-
-/* .content .buttons_container #colorInput {
-  height: 100%;
-  width: 100%;
-} */
 
 .content .buttons_container .colorModal,
 .content .buttons_container .gradientModal {
@@ -543,6 +511,10 @@
   padding: 6px;
 }
 
+.content .text_container div {
+  height: fit-content;
+}
+
 .content .buttons_container button {
   margin: 6px;
   height: 25px;
@@ -570,13 +542,6 @@
   }
 }
 
-/* @media only screen and (min-width: 260px) {
-  .content textarea,
-  .content .text_container {
-    height: 80px;
-  }
-} */
-
 @media only screen and (min-width: 238px) {
   .content .content_modal {
     height: 434px;
@@ -588,12 +553,6 @@
     height: 404px;
   }
 }
-
-/* @media only screen and (min-width: 322px) {
-  .content .content_modal {
-    height: 96%;
-  }
-} */
 
 @media only screen and (min-width: 400px) {
   .content .content_wrapper {
@@ -616,21 +575,12 @@
   .content .buttons_container button {
     margin-bottom: 12px;
   }
-
-  /* .content .content_modal {
-    height: 96%;
-  } */
 }
 
 @media only screen and (min-width: 550px) {
   .content .content_wrapper {
     width: 80%;
   }
-
-  /* .content .content_modal {
-    height: 96%; */
-    /* width: 78%; */
-  /* } */
 
   .content textarea {
     padding: 10px;
@@ -736,10 +686,6 @@
   overflow-y: scroll;
   overflow-x: hidden;
 }
-
-/* .content .buttons_container #colorInput {
-  opacity: 0;
-} */
 
 .content .buttons_container .colorModal,
 .content .buttons_container .gradientModal {
