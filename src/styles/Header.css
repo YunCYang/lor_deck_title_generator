@@ -68,6 +68,20 @@
   top: -3px;
 }
 
+@media only screen and (min-width: 550px) {
+  .header .header_end {
+    position: relative;
+    top: -4px;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .header .header_end {
+    position: relative;
+    top: -5px;
+  }
+}
+
 /* space */
 .header {
   width: 100%;
@@ -85,6 +99,14 @@
 @media only screen and (min-width: 400px) {
   .header .header_end,
   .header .underline {
-    margin: 40px 0 60px 0;
+    margin: 40px 0 40px 0;
+  }
+}
+
+@media only screen and (min-width: 700px) {
+
+  .header .header_end,
+  .header .underline {
+    margin: 20px 0 20px 0;
   }
 }
